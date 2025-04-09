@@ -6,6 +6,7 @@ export const NoWidgetsAddedContainer = (props: {
   const { toggleEditDashboard } = props;
   return (
     <div className="no-widgets-added-container flex flex-col items-center justify-center gap-4 h-[50vh]">
+      <img src="/img.svg" alt="img" />
       <h2 className="text-2xl font-bold mt-4">No widgets added yet</h2>
       <p className="text-sm">Click "Edit Dashboard" to add a new widget</p>
       <Button
