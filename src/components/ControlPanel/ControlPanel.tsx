@@ -23,7 +23,7 @@ export const ControlPanel = ({
               saveWidgetToLocalStorage();
               toggleEditDashboard();
             }}
-            className="rounded-lg border border-solid border-transparent ml-2 px-2 py-1 
+            className="rounded-lg border border-solid ml-2 px-2 py-1 
             text-base font-medium font-sans  bg-blue-500 text-white border-blue-500 
             cursor-pointer hover:bg-blue-600 hover:border-blue-600"
           />

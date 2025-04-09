@@ -12,7 +12,7 @@ export const NoWidgetsAddedContainer = (props: {
       <Button
         name="Edit Dashboard"
         onClick={toggleEditDashboard}
-        className="rounded-lg border border-solid border-transparent px-2 py-1 
+        className="rounded-lg border border-solid px-2 py-1 
         text-base font-medium font-sans  bg-blue-500 text-white border-blue-500 
         cursor-pointer hover:bg-blue-600 hover:border-blue-600"
       />
