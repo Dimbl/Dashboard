@@ -8,7 +8,7 @@ export interface Widget {
 export interface ButtonProps {
   name: string;
   className?: string;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export interface LayoutType {

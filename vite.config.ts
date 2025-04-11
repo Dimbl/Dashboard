@@ -7,9 +7,9 @@ export default defineConfig({
   css: {
     postcss: "./postcss.config.js",
   },
-  resolve: {
-    alias: {
-      "@": "/src",
-    },
+  server: {
+    host: "0.0.0.0",
+    port: 5173,
+    allowedHosts: [".ru.tuna.am"],
   },
 });

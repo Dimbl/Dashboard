@@ -87,7 +87,7 @@ export const AddedWidgetsContainer = ({
           <div
             className="flex flex-row items-center justify-center bg-white rounded-lg 
             border border-solid border-blue-100 p-4 
-            hover:border-blue-500 relative group"
+            hover:border-blue-500 relative group cursor-grab active:cursor-grabbing"
             key={widget.id}
           >
             <span>{widget.name}</span>
@@ -97,9 +97,12 @@ export const AddedWidgetsContainer = ({
                 className={`flex items-center justify-center absolute right-1.5 top-1.5 
                   bg-gray-100 border border-gray-400 w-5 h-5 rounded 
                   cursor-pointer invisible group-hover:visible 
-                  hover:border-blue-500 hover:bg-blue-500 hover:text-white 
+                  hover:border-blue-500 hover:bg-blue-500
                    ${widget.addWidget ? "bg-white text-black" : ""}`}
-                onClick={() => toggleWidgets(widget)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleWidgets(widget);
+                }}
               />
             ) : null}
           </div>

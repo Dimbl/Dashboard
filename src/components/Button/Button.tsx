@@ -10,7 +10,11 @@ export const Button = (props: ButtonProps) => {
   } = props;
 
   return (
-    <button className={className} onClick={onClick}>
+    <button
+      className={className}
+      onClick={onClick}
+      onMouseDown={name === "X" ? (e) => e.stopPropagation() : undefined}
+    >
       {name}
     </button>
   );
